@@ -30,8 +30,8 @@ export class TemperatureComponent implements OnDestroy {
   }
 
   getCurrentSensorDataAsync() {
-    //var url = window.location.origin + "/api/templogger/latest";
-    var url = "http://192.168.0.17/api/templogger/latest";
+    var url = window.location.origin + "/api/templogger/latest";
+    //var url = "http://192.168.0.17/api/templogger/latest";
 
     this.http.get(url).map(resp => resp.json())
                .subscribe((data) => this.latestData = data);
