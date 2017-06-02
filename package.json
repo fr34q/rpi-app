@@ -1,73 +1,66 @@
 {
   "name": "angular2-seed",
-  "version": "3.0.3",
-  "description": "Angular 2 TypeScript starter project",
-  "author": "Matthias Schuetz",
+  "version": "1.0.0",
+  "description": "A simple starter Angular2 project",
   "scripts": {
-    "aot": "node node_modules/.bin/ngc -p tsconfig-aot.json",
-    "aot-win": "node_modules/.bin/ngc -p tsconfig-aot.json",
-    "aot-rollup": "node node_modules/.bin/rollup -c aot-rollup-config.js",
-    "aot-rollup-win": "node_modules/.bin/rollup -c aot-rollup-config.js"
+    "build": "webpack --progress",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --inline --progress --port 3000 --content-base src",
+    "start": "npm run server"
   },
+  "contributors": [
+    "Rob Wormald <robwormald@gmail.com>",
+    "PatrickJS <github@gdi2290.com>"
+  ],
+  "license": "MIT",
   "dependencies": {
-    "@angular/common": "~2.1.2",
-    "@angular/compiler": "~2.1.2",
-    "@angular/compiler-cli": "~2.1.2",
-    "@angular/core": "~2.1.2",
-    "@angular/forms": "~2.1.2",
-    "@angular/http": "~2.1.2",
-    "@angular/platform-browser": "~2.1.2",
-    "@angular/platform-browser-dynamic": "~2.1.2",
-    "@angular/platform-server": "~2.1.2",
-    "@angular/router": "~3.1.1",
+    "@angular/animations": "^4.1.3",
+    "@angular/common": "^4.1.3",
+    "@angular/compiler": "^4.1.3",
+    "@angular/compiler-cli": "^4.1.3",
+    "@angular/core": "^4.1.3",
+    "@angular/flex-layout": "^2.0.0-beta.8",
+    "@angular/forms": "^4.1.3",
+    "@angular/http": "^4.1.3",
+    "@angular/material": "^2.0.0-beta.6",
+    "@angular/platform-browser": "^4.1.3",
+    "@angular/platform-browser-dynamic": "^4.1.3",
+    "@angular/platform-server": "^4.1.3",
+    "@angular/router": "^4.1.3",
+    "@angular/upgrade": "^4.1.3",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "5.0.0-beta.12",
-    "systemjs": "0.19.27",
-    "zone.js": "^0.6.23"
+    "hammerjs": "^2.0.8",
+    "ie-shim": "^0.1.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.0",
+    "zone.js": "^0.8.11"
   },
   "devDependencies": {
-    "@types/core-js": "0.9.36",
-    "@types/jasmine": "2.5.37",
-    "@types/node": "^6.0.46",
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.1",
-    "event-stream": "^3.3.3",
-    "express": "^4.14.0",
-    "gulp": "^3.9.0",
-    "gulp-clean": "^0.3.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^2.2.0",
-    "gulp-preprocess": "^2.0.0",
-    "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.2.0",
-    "gulp-tslint": "^5.0.0",
-    "gulp-typescript": "^3.1.2",
-    "gulp-watch": "^4.3.5",
-    "jasmine-core": "^2.4.1",
-    "karma": "^1.3.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-cli": "^1.0.1",
-    "karma-jasmine": "^1.0.2",
-    "rollup": "^0.36.3",
-    "rollup-plugin-commonjs": "^5.0.5",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-uglify": "^1.0.1",
-    "run-sequence": "^1.1.5",
-    "tslint": "^3.11.0",
-    "typescript": "2.0.6",
-    "typings": "^0.8.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/matthias-schuetz/angular2-seed/"
+    "@types/node": "^6.0.48",
+    "angular2-router-loader": "^0.3.4",
+    "angular2-template-loader": "^0.6.0",
+    "awesome-typescript-loader": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "raw-loader": "^0.5.1",
+    "to-string-loader": "^1.1.4",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
   },
   "keywords": [
-    "angular2",
-    "seed",
-    "boilerplate",
-    "typescript",
-    "starter-kit"
+    "Angular2",
+    "angular2-seed",
+    "official angular 2 seed",
+    "official angular2 seed"
   ],
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular2-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular2-seed/issues"
+  },
+  "homepage": "https://github.com/angular/angular2-seed#readme"
 }

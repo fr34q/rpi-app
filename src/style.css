@@ -1,0 +1,15 @@
+@import 'styles/material/indigo-pink.css';
+
+html, body, material-app, md-sidenav-container, .my-content {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main.primary-content {
+  padding: 0 16px;
+}
+
+.page-title md-icon {
+    margin: 0 8px;
+}

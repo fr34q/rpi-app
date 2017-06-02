@@ -1,0 +1,16 @@
+.flex-container {
+    margin: 16px -16px -16px 0;
+}
+.flex-item {
+  padding: 0 16px 16px 0;
+}
+
+md-spinner {
+    margin: auto;
+}
+
+.data-time {
+    text-align: right;
+    font-style: italic;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}

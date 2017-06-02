@@ -9,3 +9,6 @@
 
 # IDE Configurations
 .idea
+.vscode/*
+
+yarn.lock

@@ -1,0 +1,32 @@
+<div class="flex-container" fxLayout="row" fxLayoutWrap="wrap">
+    <div class="flex-item" fxFlex="100%" [hidden]="latestData != null">
+        <md-spinner></md-spinner>
+    </div>
+
+    <div class="flex-item data-time" fxFlex="100%" [hidden]="latestData == null">
+        Last update: {{latestData?.timestamp}}
+    </div>
+    <div class="flex-item" fxFlex="50%" fxFlex.lt-sm="100%" [hidden]="latestData == null">
+        <md-card>
+            <md-card-title>Temperature</md-card-title>
+            <md-card-content>
+                {{latestData?.temperature}} &deg;C
+            </md-card-content>
+        </md-card>
+    </div>
+    <div class="flex-item" fxFlex="50%" fxFlex.lt-sm="100%" [hidden]="latestData == null">
+        <md-card>
+            <md-card-title>Humidity</md-card-title>
+            <md-card-content>
+                {{latestData?.humidity}} %
+            </md-card-content>
+        </md-card>
+    </div>
+    <div class="flex-item" fxFlex="100%" hidden="true">
+        <md-card>
+            <md-card-title>Last 24 hours</md-card-title>
+            <md-card-content>Chart here</md-card-content>
+        </md-card>
+    </div>
+
+</div>
