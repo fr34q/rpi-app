@@ -22,10 +22,12 @@
             </md-card-content>
         </md-card>
     </div>
-    <div class="flex-item" fxFlex="100%" hidden="true">
+    <div class="flex-item" fxFlex="100%">
         <md-card>
-            <md-card-title>Last 24 hours</md-card-title>
-            <md-card-content>Chart here</md-card-content>
+            <md-card-title>Last 10 minutes</md-card-title>
+            <md-card-content>
+                <chart [options]="options"></chart>
+            </md-card-content>
         </md-card>
     </div>
 

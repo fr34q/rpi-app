@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { MaterialModule } from './modules/material.module';
+import { ChartModule } from 'angular2-highcharts';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
@@ -34,7 +35,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     RouterModule.forRoot(rootRouterConfig, { useHash: true }),
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ChartModule.forRoot(require('highcharts'))
   ],
   providers: [
   ],

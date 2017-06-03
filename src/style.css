@@ -13,3 +13,18 @@ main.primary-content {
 .page-title md-icon {
     margin: 0 8px;
 }
+
+md-sidenav-layout /deep/ .md-sidenav-content {
+  overflow: hidden;
+}
+
+md-sidenav-container {
+  height: calc(100% - 64px);
+  overflow: auto;
+}
+
+@media (max-width: 600px) {
+  md-sidenav-container {
+    height: calc(100% - 56px);
+  }
+}

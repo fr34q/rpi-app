@@ -14,3 +14,7 @@ md-spinner {
     font-style: italic;
     font-family: Roboto,"Helvetica Neue",sans-serif;
 }
+
+chart {
+    display: block;
+}

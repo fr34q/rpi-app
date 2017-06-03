@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import {Http} from '@angular/http';
+import { Http } from '@angular/http';
 import { Observable, Subscription } from 'rxjs/Rx';
 
 interface SensorData {
@@ -20,20 +20,28 @@ export class TemperatureComponent implements OnDestroy {
     this.getCurrentSensorDataAsync();
     this.intervalSubscription = Observable.interval(5000).subscribe(() => this.getCurrentSensorDataAsync());
   }
-  
+
   latestData: SensorData;
 
+  options: Object = {
+    title: { text: 'simple chart' },
+    series: [{
+      data: [29.9, 71.5, 106.4, 129.2],
+    }]
+  };
+
   private intervalSubscription: Subscription;
-  
+
   ngOnDestroy(): void {
     this.intervalSubscription.unsubscribe();
   }
 
   getCurrentSensorDataAsync() {
-    var url = window.location.origin + "/api/templogger/latest";
-    //var url = "http://192.168.0.17/api/templogger/latest";
+    const origin = window.location.hostname === "localhost"
+      ? "https://fr34q.goip.de:17455" : window.location.origin
+    const url = origin + "/api/templogger/latest";
 
     this.http.get(url).map(resp => resp.json())
-               .subscribe((data) => this.latestData = data);
+      .subscribe((data) => this.latestData = data);
   }
 }
