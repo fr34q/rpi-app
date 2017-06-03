@@ -1,7 +1,7 @@
 {
-  "name": "angular2-seed",
+  "name": "rpi-app",
   "version": "1.0.0",
-  "description": "A simple starter Angular2 project",
+  "description": "Web app for Raspberry Pi.",
   "scripts": {
     "build": "webpack --progress",
     "watch": "npm run build -- --watch",
@@ -9,8 +9,7 @@
     "start": "npm run server"
   },
   "contributors": [
-    "Rob Wormald <robwormald@gmail.com>",
-    "PatrickJS <github@gdi2290.com>"
+    "Richard Gebauer <richardgebauer@gmx.de>"
   ],
   "license": "MIT",
   "dependencies": {
@@ -28,6 +27,7 @@
     "@angular/platform-server": "^4.1.3",
     "@angular/router": "^4.1.3",
     "@angular/upgrade": "^4.1.3",
+    "angular2-highcharts": "^0.5.5",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "hammerjs": "^2.0.8",
@@ -50,17 +50,16 @@
     "webpack-merge": "^4.1.0"
   },
   "keywords": [
-    "Angular2",
-    "angular2-seed",
-    "official angular 2 seed",
-    "official angular2 seed"
+    "Raspberry Pi",
+    "raspberry-pi",
+    "rpi"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/angular2-seed.git"
+    "url": "git+https://github.com/fr34q/rpi-app.git"
   },
   "bugs": {
-    "url": "https://github.com/angular/angular2-seed/issues"
+    "url": "https://github.com/fr34q/rpi-app/issues"
   },
-  "homepage": "https://github.com/angular/angular2-seed#readme"
+  "homepage": "https://github.com/fr34q/rpi-app#readme"
 }
