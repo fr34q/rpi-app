@@ -16,6 +16,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { RadioComponent } from './radio/radio.component';
 import { TemperatureComponent } from './temperature/temperature.component';
+import { RecentChartComponent } from './temperature/recentChart/recentChart.component';
 
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
@@ -25,7 +26,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     AboutComponent,
     HomeComponent,
     RadioComponent,
-    TemperatureComponent
+    TemperatureComponent,
+    RecentChartComponent
   ],
   imports: [
     BrowserModule,

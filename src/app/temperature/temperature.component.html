@@ -26,9 +26,21 @@
         <md-card>
             <md-card-title>Last 10 minutes</md-card-title>
             <md-card-content>
-                <chart [options]="options"></chart>
+                <recent-chart seconds="600"></recent-chart>
             </md-card-content>
         </md-card>
     </div>
-
+    <div class="flex-item" fxFlex="100%">
+        <md-card>
+            <md-card-title>
+                Last 24 hours
+                <a md-icon-button (click)="seconds24h=86400">
+                    <md-icon>sync</md-icon>
+                </a>
+            </md-card-title>
+            <md-card-content>
+                <recent-chart [seconds]="seconds24h"></recent-chart>
+            </md-card-content>
+        </md-card>
+    </div>
 </div>
